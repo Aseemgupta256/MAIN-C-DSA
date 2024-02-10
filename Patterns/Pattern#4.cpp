@@ -1,4 +1,4 @@
-/*Program to create inverted left triangle
+/*Program to create Numbered left triangle
     1
     1 2
     1 2 3
