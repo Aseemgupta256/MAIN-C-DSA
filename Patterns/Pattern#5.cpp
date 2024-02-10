@@ -27,7 +27,7 @@ while(i<=n*2-1)
     } while (j<=i);
     }
     else{
-         int j=10-i;
+         int j=2*n-i;
     do
     {
         cout<<"*";
