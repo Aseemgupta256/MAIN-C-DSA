@@ -1,4 +1,4 @@
-/*Program to create Half Right Triangle
+/*Program to create Half Right Diamond
     *
     **
     ***
