@@ -1,4 +1,3 @@
-//A program to create 5by5 star pattern
 #include<iostream>
 using namespace std;
 int main()
