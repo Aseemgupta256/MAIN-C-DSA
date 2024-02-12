@@ -1,4 +1,4 @@
-/*Program to create full diamond edges inverted
+/*Program to create full diamond edges inverted only
      * * * * *
       * * * *
        * * *
