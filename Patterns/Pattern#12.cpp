@@ -1,4 +1,4 @@
-/*Program to create Half Diamond with Spaces Inverted
+/*Program to create full diamond edges inverted
      * * * * *
       * * * *
        * * *
