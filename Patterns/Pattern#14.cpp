@@ -1,25 +1,25 @@
-/*Program to create Half Hollow Diamond
-         *
-        * *
-       *   *
+/*Program to create Half Hollow Diamond Inverted
+     *********
       *     *
-     ********* */
+       *   *
+        * *
+         * */
 #include<iostream>
 using namespace std;
 int main()
 {
     int n = 5;
-    int i =1;
-while(i<=5)
+    int i =n;
+while(i>0)
 {
-    int j=1;
-    while (j<=n-i)
+    int j=n-i;
+    while (j>0)
     {
         cout<<" ";
-        j++;
+        j--;
     }
-    int s=1;
-    while(s<=2*i-1)
+    int s=2*i-1;
+    while(s>0)
     {
         if(i==1 || i==n || s==1 || s==2*i-1)
         {
@@ -29,10 +29,10 @@ while(i<=5)
                 cout<<" ";
             }
         
-        s++;
+        s--;
     }
      cout<<endl;
-    i++; 
+    i--; 
 }
     return 0;
 }
