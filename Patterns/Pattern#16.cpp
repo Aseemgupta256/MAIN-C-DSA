@@ -1,4 +1,4 @@
-/*Program to create full Hollow Diamond
+/*Program to create pascles Triangle
               1
             1   1
           1   2   1
@@ -8,35 +8,34 @@
 using namespace std;
 
 int fact(int n) {
-    if (n == 0 || n == 1) {
-        return 1;
-    } else {
-        int f = 1;
-        for (int i = 1; i <= n; ++i) {
-            f *= i;
-        }
-        return f;
+    int f = 1;
+    int d = 1;
+    while (d <= n) {
+        f *= d;
+        d++;
     }
-}
-
-int nCr(int n, int r) {
-    return fact(n) / (fact(r) * fact(n - r));
+    return f;
 }
 
 int main() {
-    int rows = 5; // Number of rows
-    for (int i = 0; i < rows; i++) {
-        // Print spaces to align the triangle
-        for (int j = 0; j < rows - i - 1; j++) {
+    int n = 5; // Number of rows
+    int i = 0;
+
+    while (i < n) {
+        int j = n - i - 1;
+        while (j > 0) {
             cout << " ";
+            j--;
         }
-
-        // Print elements in current row
-        for (int j = 0; j <= i; j++) {
-            cout << nCr(i, j) << " ";
+        
+        int s = 0;
+        while (s <= i) {
+            cout << fact(i) / (fact(s) * fact(i - s)) << " ";
+            s++;
         }
-
+        
         cout << endl;
+        i++;
     }
 
     return 0;
