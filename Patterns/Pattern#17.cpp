@@ -1,4 +1,4 @@
-/*Program to create Number palinder pattern
+/*Program to create Number palinderom pattern
               1
              232
             34543
